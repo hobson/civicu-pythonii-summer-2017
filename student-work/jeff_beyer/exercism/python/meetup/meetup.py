@@ -4,20 +4,7 @@ from calendar import Calendar
 def meetup_day(year, month, day, occurance):
     year = year
     month = month
-    if day == 'Monday':
-        day_ind = 0
-    elif day == 'Tuesday':
-        day_ind = 1
-    elif day == 'Wednesday':
-        day_ind = 2
-    elif day == 'Thursday':
-        day_ind = 3
-    elif day == 'Friday':
-        day_ind = 4
-    elif day == 'Saturday':
-        day_ind = 5
-    elif day == 'Sunday':
-        day_ind = 6
+    day_ind = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'].index(day
 
     possible_days = list()
     for d in Calendar().itermonthdays(year, month):
